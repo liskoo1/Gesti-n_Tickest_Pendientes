@@ -273,7 +273,7 @@ namespace Gestión_Tickest_Pendientes.Services
                     Ticket? ticket = context.tickets.FirstOrDefault((t) => t.Id_Albaran == id_albaran);
                     if (ticket == null)
                     {
-                        MessageBox.Show("El Numero se albaran no pueder ser modificado. Si quieres puedes eliminar este tiket y crear uno nuevo.");
+                        MessageBox.Show("El Numero se albarán no puede ser modificado. Si quieres puedes eliminar este ticket y crear uno nuevo.");
                     }
                     else
                     {
@@ -434,7 +434,7 @@ namespace Gestión_Tickest_Pendientes.Services
                     var worksheet = package.Workbook.Worksheets[0];
                     for (int row = 2; row <= worksheet.Dimension.Rows; row++)
                     {
-                        //Por cada fila insertamos los datos en Tikect y lo guardamos en base de datos
+                        //Por cada fila insertamos los datos en Ticket y lo guardamos en base de datos
                         Ticket ticket = new Ticket();
                         ticket.Id_Albaran = worksheet.Cells[row, 1].Text;
                         ticket.Total = Convert.ToInt32(worksheet.Cells[row, 2].Text);

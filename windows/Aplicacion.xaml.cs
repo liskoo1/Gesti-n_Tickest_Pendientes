@@ -86,7 +86,7 @@ namespace Gestión_Tickest_Pendientes.windows
         {
             if (_Selection())
             {
-                var security = MessageBox.Show($"Vas a eliminar el albaran nº {ticketDto.Id_Albaran} estas seguro?","Eliminar",MessageBoxButton.YesNo,MessageBoxImage.Question);
+                var security = MessageBox.Show($"Vas a eliminar el albarán nº {ticketDto.Id_Albaran} estas seguro?","Eliminar",MessageBoxButton.YesNo,MessageBoxImage.Question);
                 if(security == MessageBoxResult.Yes)
                 {
                     cmd.DeleteTicket(ticketDto.Id_Albaran);

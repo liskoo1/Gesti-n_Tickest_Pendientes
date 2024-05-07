@@ -91,17 +91,6 @@ namespace Gestión_Tickest_Pendientes
             // Tambien puede ser que necesitemos este otro comando: dotnet ef migrations add nombre_de_la_migracion --project path_del_proyecto
 
             // Para eliminar la ultima migración seria : dotnet ef migrations remove 
-
-            //Nos aseguramos que cree la base de datos conforme a nuestro contexto
-            //if ()
-            //{
-            //    MessageBox.Show("Nueva base de datos creada.");
-            //    Empresa empresa = new Empresa("Gastro Bar Venta del Pobre", "55485544D", "Venta del Pobre","950385192","ventadelpobre@gmail.com");
-            //    context.empresas.Add(empresa);
-            //    context.SaveChanges();
-
-            //} 
-
         }
     }
 }
