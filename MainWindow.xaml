@@ -1,0 +1,19 @@
+﻿<Window x:Class="Gestión_Tickest_Pendientes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gestión_Tickest_Pendientes"
+        mc:Ignorable="d"
+        Title="MainWindow" WindowState="Maximized"  Background="#191919" MinWidth="1024" MinHeight="768" Loaded="Window_Loaded">
+    <Grid  Width="1024" Height="784" Cursor="AppStarting">
+        <Image HorizontalAlignment="Left" Height="225" Margin="402,78,0,0" VerticalAlignment="Top" Width="236" Source="/Resource/icono_bar.png"/>
+        <Label Content="Venta del Pobre Gastro Bar" HorizontalAlignment="Center" Margin="0,346,0,0" VerticalAlignment="Top" Width="747" Foreground="#FFF5EDED" FontSize="50" FontFamily="Broadway"/>
+        <Label Content="USUARIO" HorizontalAlignment="Center" Margin="0,451,0,0" VerticalAlignment="Top" Width="147" Foreground="#FFF3EDED" FontSize="35" FontFamily="Consolas" FontWeight="Bold"/>
+        <TextBox x:Name="txtUsuario" TextWrapping="Wrap" Margin="386,507,382,239" FontSize="25" FontFamily="Agency FB" BorderThickness="0,0,0,3" HorizontalContentAlignment="Center" SelectionTextBrush="#FF191919" Background="#FF191919" BorderBrush="#FF39AF3B" Foreground="#FFFBFBFB"/>
+        <Label Content="CONTRASEÑA" HorizontalAlignment="Center" Margin="0,569,0,0" VerticalAlignment="Top" Width="204" Foreground="#FFF3EDED" FontSize="35" FontFamily="Consolas" FontWeight="Bold"/>
+        <Button x:Name="btnIniciarSesion" Content="Iniciar Sesión" HorizontalAlignment="Center" Margin="0,694,0,0" VerticalAlignment="Top" Width="260" Height="57" FontFamily="Consolas" FontWeight="Bold" FontSize="25" ScrollViewer.CanContentScroll="True" Background="#FF00242B" BorderBrush="#FFFFFBFB" Foreground="White" Cursor="Hand" Click="IniciarSesion"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="386,625,0,0" VerticalAlignment="Top" Width="256" Height="36" Background="#FF191919" FontSize="25" FontFamily="Consolas" BorderThickness="0,0,0,3" BorderBrush="#FF39AF3B" Foreground="#FFFDF9F9" HorizontalContentAlignment="Center" Password=""/>
+
+    </Grid>
+</Window>
